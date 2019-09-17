@@ -1,6 +1,6 @@
 # mavonEditor
 
-![npm](https://nodei.co/npm/mavon-editor.png?downloads=true&downloadRank=true&stars=true)
+Fork by Quank123Wip
 
 > 基于Vue的markdown编辑器
 
