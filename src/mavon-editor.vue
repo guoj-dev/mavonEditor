@@ -120,6 +120,27 @@ import md_toolbar_left from './components/md-toolbar-left.vue'
 import md_toolbar_right from './components/md-toolbar-right.vue'
 import "./lib/font/css/fontello.css"
 import './lib/css/md.css'
+const filterXSS = require('xss');
+filterXSS.whiteList['input'] = ['type', 'src', 'disabled', 'checked', 'class']
+filterXSS.whiteList['img'] = ['src', 'alt', 'title', 'width', 'max-width', 'style', 'height']
+filterXSS.whiteList['math'] = []
+filterXSS.whiteList['semantics'] = []
+filterXSS.whiteList['mrow'] = []
+filterXSS.whiteList['mtext'] = []
+filterXSS.whiteList['annotation'] = ['encoding']
+filterXSS.whiteList['msub'] = []
+filterXSS.whiteList['mi'] = []
+filterXSS.whiteList['mo'] = []
+filterXSS.whiteList['mn'] = []
+filterXSS.whiteList['li'] = ['class']
+filterXSS.whiteList['span'] = ['class', 'title', 'aria-hidden', 'style']
+filterXSS.whiteList['code'] = []
+filterXSS.whiteList['li'] = ['class', 'id']
+filterXSS.whiteList['td'] = ['style', 'class']
+filterXSS.whiteList['p'] = ['style', 'class']
+filterXSS.whiteList['div'] = ['style', 'class']
+filterXSS.whiteList['a'] = ['style', 'class', 'id', 'target', 'href', 'title']
+filterXSS.stripIgnoreTag = true
 export default {
     mixins: [markdown],
     props: {
@@ -655,6 +676,9 @@ export default {
         }
     },
     watch: {
+        d_render: function (val, oldVal) {
+            this.d_render = filterXSS(this.d_render)
+        },
         d_value: function (val, oldVal) {
             this.iRender();
         },

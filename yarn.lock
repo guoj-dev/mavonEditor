@@ -3428,6 +3428,11 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
 
+js-xss@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npm.taobao.org/js-xss/download/js-xss-0.0.2.tgz#522e3732606c1c992ca6ca551da8246e492ad103"
+  integrity sha1-Ui43MmBsHJkspspVHagkbkkq0QM=
+
 js-yaml@^3.4.3, js-yaml@^3.9.1:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
