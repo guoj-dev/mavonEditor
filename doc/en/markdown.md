@@ -4,7 +4,7 @@
 
 #### method 1:  Global Registration
 ```javascript
-  import mavonEditor from 'mavon-editor'
+  import mavonEditor from 'mavon-editor-guoj'
   Vue.use(mavonEditor)
   ...
   mavonEditor.markdownIt
@@ -12,7 +12,7 @@
 
 #### method 2: Local Registration
 ```javascript
-  import {mavonEditor} from 'mavon-editor'
+  import {mavonEditor} from 'mavon-editor-guoj'
   mavonEditor.getMarkdownIt()
   or
   mavonEditor.mixins[0].data().s_markdown

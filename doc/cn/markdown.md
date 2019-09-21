@@ -4,7 +4,7 @@
 
 #### 方法1 通过全局引入的mavonEditor获取
 ```javascript
-  import mavonEditor from 'mavon-editor'
+  import mavonEditor from 'mavon-editor-guoj'
   Vue.use(mavonEditor)
   ...
   mavonEditor.markdownIt
@@ -12,7 +12,7 @@
 
 #### 方法2 通过局部引入的mavonEditor获取
 ```javascript
-  import {mavonEditor} from 'mavon-editor'
+  import {mavonEditor} from 'mavon-editor-guoj'
   mavonEditor.getMarkdownIt()
   或者
   mavonEditor.mixins[0].data().markdownIt

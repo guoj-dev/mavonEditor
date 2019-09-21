@@ -6,7 +6,7 @@
     // Global Registration
     // import with ES6
     import Vue from 'vue'
-    import mavonEditor from 'mavon-editor'
+    import mavonEditor from 'mavon-editor-guoj'
     import 'mavon-editor/dist/css/index.css'
 
     // use
@@ -32,7 +32,7 @@
     // Global Registration
     // require with Webpack/Node.js
     ...
-    var mavonEditor = require('mavon-editor')
+    var mavonEditor = require('mavon-editor-guoj')
     import 'mavon-editor/dist/css/index.css'
 
     ...
@@ -48,13 +48,13 @@
     </template>
     <script>
     // Local Registration
-    import { mavonEditor } from 'mavon-editor'
+    import { mavonEditor } from 'mavon-editor-guoj'
     import 'mavon-editor/dist/css/index.css'
     export default {
         name: 'editor',
         components: {
             mavonEditor
-            // or 'mavon-editor': mavonEditor
+            // or 'mavon-editor-guoj': mavonEditor
         }
     }
     </script>
@@ -89,14 +89,14 @@
     ...
     <script>
     // Local Registration
-    // import mavonEditor from 'mavon-editor'
-    var mavonEditor = require('mavon-editor')
+    // import mavonEditor from 'mavon-editor-guoj'
+    var mavonEditor = require('mavon-editor-guoj')
 	// the Object of markdown-it : mavonEditor.markdownIt
     import 'mavon-editor/dist/css/index.css'
     export default {
         name: 'editor',
         components: {
-            'mavon-editor': mavonEditor.mavonEditor
+            'mavon-editor-guoj': mavonEditor.mavonEditor
         }
     }
     </script>

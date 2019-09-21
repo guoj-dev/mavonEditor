@@ -20,7 +20,7 @@ Fork by Quank123Wip
 ### Install mavon-editor (安装)
 
 ```
-$ npm install mavon-editor --save
+$ npm install mavon-editor-guoj --save
 ```
 
 ### Use (如何引入)
@@ -30,7 +30,7 @@ $ npm install mavon-editor --save
     // 全局注册
     // import with ES6
     import Vue from 'vue'
-    import mavonEditor from 'mavon-editor'
+    import mavonEditor from 'mavon-editor-guoj'
     import 'mavon-editor/dist/css/index.css'
     // use
     Vue.use(mavonEditor)
@@ -51,7 +51,7 @@ $ npm install mavon-editor --save
 > 首先在工程目录plugins 下新建 vue-mavon-editor.js
 ``` javascrpt 
 import Vue from 'vue';
-import mavonEditor from 'mavon-editor';
+import mavonEditor from 'mavon-editor-guoj';
 import 'mavon-editor/dist/css/index.css';
 
 Vue.use(mavonEditor);

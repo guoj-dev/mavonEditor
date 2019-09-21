@@ -18,7 +18,7 @@
 
 ### Install mavon-editor
 ```
-$ npm install mavon-editor --save
+$ npm install mavon-editor-guoj --save
 ```
 
 ### Use
@@ -28,7 +28,7 @@ $ npm install mavon-editor --save
     // Global Registration
     // import with ES6
     import Vue from 'vue'
-    import mavonEditor from 'mavon-editor'
+    import mavonEditor from 'mavon-editor-guoj'
     import 'mavon-editor/dist/css/index.css'
 
     // use
@@ -51,7 +51,7 @@ $ npm install mavon-editor --save
 > new file: vue-mavon-editor.js
 ``` javascrpt
 import Vue from 'vue';
-import mavonEditor from 'mavon-editor';
+import mavonEditor from 'mavon-editor-guoj';
 import 'mavon-editor/dist/css/index.css';
 
 Vue.use(mavonEditor);
