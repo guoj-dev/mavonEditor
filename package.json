@@ -1,6 +1,6 @@
 {
   "name": "mavon-editor-guoj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue markdown editor, modified by GuOJ",
   "main": "dist/mavon-editor.js",
   "types": "./mavon-editor.d.ts",
@@ -29,7 +29,7 @@
   "homepage": "https://https://github.com/guoj-dev/mavonEditor-GuOJ#readme",
   "dependencies": {
     "highlight.js": "^9.11.0",
-    "highlight.js-async-webpack": "^1.0.4",
+    "highlight.js-async-webpack": "^1.0.4"
   },
   "devDependencies": {
     "auto-textarea": "^1.4.0",
