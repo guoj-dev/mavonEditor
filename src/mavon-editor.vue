@@ -115,6 +115,7 @@ import {toolbar_right_click} from './lib/toolbar_right_click.js'
 import {CONFIG} from './lib/config.js'
 import hljs from './lib/core/highlight.js'
 import markdown from './lib/mixins/markdown.js'
+import dompurify from 'dompurify'
 
 import md_toolbar_left from './components/md-toolbar-left.vue'
 import md_toolbar_right from './components/md-toolbar-right.vue'
@@ -630,6 +631,7 @@ export default {
             var $vm = this;
             this.$render($vm.d_value, function(res) {
                 // render
+                $vm.d_value=dompurify.sanitize($vm.d_value)
                 $vm.d_render = res;
                 // change回调  toggleChange == false 时候触发change回调
                 if (!toggleChange)

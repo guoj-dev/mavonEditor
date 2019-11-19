@@ -28,6 +28,7 @@
   },
   "homepage": "https://https://github.com/guoj-dev/mavonEditor-GuOJ#readme",
   "dependencies": {
+    "dompurify": "^2.0.7",
     "highlight.js": "^9.11.0",
     "highlight.js-async-webpack": "^1.0.4"
   },
