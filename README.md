@@ -2,6 +2,8 @@
 
 Fork by Quank123Wip
 
+![](https://github.com/guoj-dev/mavonEditor-GuOJ/workflows/Node%20CI/badge.svg)
+
 > 基于Vue的markdown编辑器
 
 ### [English Documents](./README-EN.md)
